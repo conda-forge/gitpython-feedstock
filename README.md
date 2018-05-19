@@ -14,12 +14,15 @@ Summary: Python Git Library
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/gitpython-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gitpython-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/gitpython-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/gitpython-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gitpython/badges/version.svg)](https://anaconda.org/conda-forge/gitpython)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gitpython/badges/downloads.svg)](https://anaconda.org/conda-forge/gitpython)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gitpython-green.svg)](https://anaconda.org/conda-forge/gitpython) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gitpython.svg)](https://anaconda.org/conda-forge/gitpython) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gitpython.svg)](https://anaconda.org/conda-forge/gitpython) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gitpython.svg)](https://anaconda.org/conda-forge/gitpython) |
 
 Installing gitpython
 ====================
