@@ -20,6 +20,7 @@ requirements:
   run:
     - python
     - gitdb2
+    - git
 
 test:
   imports:
