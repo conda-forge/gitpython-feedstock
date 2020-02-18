@@ -9,7 +9,7 @@ source:
   sha256: 9c2398ffc3dcb3c40b27324b316f08a4f93ad646d5a6328cafbb871aa79f5e42
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -19,11 +19,12 @@ requirements:
     - pip
   run:
     - python >=3
-    - gitdb2
+    - gitdb2 <=3.0.0
 
 test:
   requires:
     - git
+    - pip
   imports:
     - git
     - git.index
@@ -31,6 +32,8 @@ test:
     - git.objects.submodule
     - git.refs
     - git.repo
+  commands:
+    - pip check
 
 about:
   home: https://github.com/gitpython-developers/GitPython
