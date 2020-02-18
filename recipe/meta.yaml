@@ -24,6 +24,7 @@ requirements:
 test:
   requires:
     - git
+    - pip
   imports:
     - git
     - git.index
@@ -31,6 +32,8 @@ test:
     - git.objects.submodule
     - git.refs
     - git.repo
+  commands:
+    - pip check
 
 about:
   home: https://github.com/gitpython-developers/GitPython
