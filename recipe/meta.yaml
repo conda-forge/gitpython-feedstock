@@ -1,12 +1,12 @@
-{% set version = "3.0.8" %}
+{% set version = "3.1.0" %}
 
 package:
   name: gitpython
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/G/GitPython/GitPython-{{ version }}.tar.gz
-  sha256: 620b3c729bbc143b498cfea77e302999deedc55faec5b1067086c9ef90e101bc
+  url: https://pypi.io/packages/source/G/GitPython/GitPython-{{ version }}.tar.gz
+  sha256: e426c3b587bd58c482f0b7fe6145ff4ac7ae6c82673fc656f489719abca6f4cb
 
 build:
   number: 0
@@ -15,11 +15,11 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.4
     - pip
   run:
-    - python >=3
-    - gitdb2 >=3,<4
+    - python >=3.4
+    - gitdb >=4.0.1,<5
 
 test:
   requires:
@@ -37,11 +37,11 @@ test:
 
 about:
   home: https://github.com/gitpython-developers/GitPython
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Python Git Library'
-  doc_url:  http://gitpython.readthedocs.org
+  summary: Python Git Library
+  doc_url: http://gitpython.readthedocs.org
 
 extra:
   recipe-maintainers:
