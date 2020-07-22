@@ -5,7 +5,7 @@ Home: https://github.com/gitpython-developers/GitPython
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python Git Library
 
