@@ -5,11 +5,11 @@ Home: https://github.com/gitpython-developers/GitPython
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gitpython-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python Git Library
 
-
+Documentation: http://gitpython.readthedocs.org
 
 Current build status
 ====================
