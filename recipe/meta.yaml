@@ -6,20 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GitPython-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/GitPython-{{ version }}.tar.gz
   sha256: 35f314a9f878467f5453cc1fee295c3e18e52f1b99f10f6cf5b1682e968a9e7c
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - gitdb >=4.0.1,<5
     - typing_extensions >=3.7.4.3
 
@@ -27,6 +28,7 @@ test:
   requires:
     - git
     - pip
+    - python {{ python_min }}
   imports:
     - git
     - git.index
