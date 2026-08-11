@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  version: "3.1.59"
+
+package:
+  name: gitpython
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/g/gitpython/gitpython-${{ version }}.tar.gz
+  sha256: 0a1475cfdc38a5bfba1a3e9a4a9da52a39749ecec322b772915c019f94e5b7e4
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - gitdb >=4.0.1,<5
+    - typing_extensions >=3.10.0.2
+
+tests:
+  - python:
+      imports:
+        - git
+        - git.index
+        - git.objects
+        - git.objects.submodule
+        - git.refs
+        - git.repo
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: GitPython is a Python library used to interact with Git repositories
+  license: BSD-3-Clause
+  license_file: LICENSE
+  homepage: https://github.com/gitpython-developers/GitPython
+  documentation: https://pythonhosted.org/GitPython/
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - pelson
+    - ocefpaf
+    - xhochy
