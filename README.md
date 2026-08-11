@@ -7,9 +7,9 @@ Home: https://github.com/gitpython-developers/GitPython
 
 Package license: BSD-3-Clause
 
-Summary: Python Git Library
+Summary: GitPython is a Python library used to interact with Git repositories
 
-Documentation: http://gitpython.readthedocs.org
+Documentation: https://pythonhosted.org/GitPython/
 
 Current build status
 ====================
