@@ -1,5 +1,5 @@
 {% set name = "gitpython" %}
-{% set version = "3.1.58" %}
+{% set version = "3.1.59" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 621416df10ef3fd0e19fabf9172ddeed0fa704d353d04f194eec56a625a95b22
+  sha256: 0a1475cfdc38a5bfba1a3e9a4a9da52a39749ecec322b772915c019f94e5b7e4
 
 build:
   number: 0
