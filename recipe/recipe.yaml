@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.1.61"
+  version: "3.1.62"
 
 package:
   name: gitpython
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gitpython/gitpython-${{ version }}.tar.gz
-  sha256: f51c24d8c0f733a195447385f5774a5dfe8767f5acfd7994a33755644c6ecc95
+  sha256: 1791de66309bc0c7cfca40bf8d2e3de7ca091cbf94e6051be1ad0722c61062af
 
 build:
   number: 0
